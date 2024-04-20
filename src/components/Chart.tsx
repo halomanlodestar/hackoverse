@@ -1,11 +1,10 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 interface CardProps {
-  data: number[]
+  data: number[];
 }
 
-const Chart = ({data}: CardProps) => {
-
+const Chart = ({ data }: CardProps) => {
   // const canvas = document.querySelector("canvas")!
   //
   //
@@ -23,29 +22,40 @@ const Chart = ({data}: CardProps) => {
   //   ctx.stroke()
   // })
 
-  const [loadProgress, setLoadProgress] = useState(0)
+  const [loadProgress, setLoadProgress] = useState(0);
 
   useEffect(() => {
-    setTimeout(() => setLoadProgress(1), 600)
-  }, [])
-
+    setTimeout(() => setLoadProgress(1), 600);
+  }, []);
 
   return (
     <div>
-      <div className={"flex justify-evenly h-60 items-end border-b border-black"}>
+      <div
+        className={
+          "flex justify-evenly text-base h-60 items-end border-b border-black"
+        }
+      >
         {data.map((value, index) => {
           return (
             <div className={"h-full flex items-end"}>
-              <div className={"flex flex-col justify-end h-0 duration-700"} style={{height: `calc(${value}% * ${loadProgress})`}}>
-
-              {/*<div className={"h-2 w-2 rounded-full bg-red-600"} />*/}
-              <div key={index}
-                   className={"relative bg-red-600 w-1 h-full rounded-t-xl flex justify-center space-x-2"}>
-                <span className={"absolute -top-10"}>{value + 200 * loadProgress}</span>
-              </div>
+              <div
+                className={"flex flex-col justify-end h-0 duration-700"}
+                style={{ height: `calc(${value}% * ${loadProgress})` }}
+              >
+                {/*<div className={"h-2 w-2 rounded-full bg-red-600"} />*/}
+                <div
+                  key={index}
+                  className={
+                    "relative bg-red-600 w-1 h-full rounded-t-xl flex justify-center space-x-2"
+                  }
+                >
+                  <span className={"absolute -top-10"}>
+                    {value + 200 * loadProgress}
+                  </span>
+                </div>
               </div>
             </div>
-          )
+          );
         })}
       </div>
     </div>

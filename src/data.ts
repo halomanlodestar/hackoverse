@@ -23,44 +23,45 @@ export const chronicDiseases: { name: string }[] = [
   { name: "Epilepsy" },
   { name: "Endometriosis" },
   { name: "Migraine headaches" },
-  { name: "Chronic pain disorders" }
+  { name: "Chronic pain disorders" },
 ];
 
 export const placeholderData = [
   {
     doctor: {
-      name: 'Dr. John Doe',
-      image: '',
+      name: "Dr. Harish Bali",
+      image:
+        "https://static.vecteezy.com/system/resources/thumbnails/028/287/384/small/a-mature-indian-male-doctor-on-a-white-background-ai-generated-photo.jpg",
     },
     disease: chronicDiseases[0].name,
-    lastAppointment: new Date('2024-04-10'),
-    nextAppointment: new Date('2024-05-10'),
+    lastAppointment: new Date("2024-04-10"),
+    nextAppointment: new Date("2024-05-10"),
   },
   {
     doctor: {
-      name: 'Dr. Emily Smith',
-      image: '',
+      name: "Dr. Emily Smith",
+      image: "",
     },
     disease: chronicDiseases[1].name,
-    lastAppointment: new Date('2024-04-15'),
-    nextAppointment: new Date('2024-05-15'),
+    lastAppointment: new Date("2024-04-15"),
+    nextAppointment: new Date("2024-05-15"),
   },
   {
     doctor: {
-      name: 'Dr. Michael Johnson',
-      image: '',
+      name: "Dr. Ajay Nagar",
+      image: "",
     },
     disease: chronicDiseases[2].name,
-    lastAppointment: new Date('2024-04-05'),
-    nextAppointment: new Date('2024-05-05'),
+    lastAppointment: new Date("2024-04-05"),
+    nextAppointment: new Date("2024-05-05"),
   },
   {
     doctor: {
-      name: 'Dr. Sarah Lee',
-      image: '',
+      name: "Dr. Sarah Lee",
+      image: "",
     },
     disease: chronicDiseases[3].name,
-    lastAppointment: new Date('2024-04-20'),
-    nextAppointment: new Date('2024-05-20'),
-  }
+    lastAppointment: new Date("2024-04-20"),
+    nextAppointment: new Date("2024-05-20"),
+  },
 ];
