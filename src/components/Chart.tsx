@@ -41,7 +41,7 @@ const Chart = ({data}: CardProps) => {
               {/*<div className={"h-2 w-2 rounded-full bg-red-600"} />*/}
               <div key={index}
                    className={"relative bg-red-600 w-1 h-full rounded-t-xl flex justify-center space-x-2"}>
-                <span className={"absolute -top-10"}>{value * loadProgress}</span>
+                <span className={"absolute -top-10"}>{value + 200 * loadProgress}</span>
               </div>
               </div>
             </div>
