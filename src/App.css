@@ -9,11 +9,11 @@ html body {
 }
 
 a:visited {
-  color: #e1e1e1;
+  color: #4a4a4a;
 }
 
 a:visited:hover {
-  color: #ffffff;
+  color: #585858;
 }
 
 main {
@@ -97,4 +97,12 @@ li {
 .progress-item:hover {
   background: #000;
   color: #fff;
+}
+
+form input {
+  @apply w-full rounded-md p-2 outline-none bg-white/40;
+}
+
+input a {
+  color: blue;
 }
