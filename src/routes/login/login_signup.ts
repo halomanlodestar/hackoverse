@@ -18,10 +18,7 @@ export const loginpage = `<!DOCTYPE html>
         <div class="signin-signup">
           <form action="./backend/login.php" method="post" class="sign-in-form">
             <h2 class="title">Sign in</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" name="un"/>
-            </div>
+            
             <div class="input-field">
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" name="pass"/>
@@ -45,18 +42,7 @@ export const loginpage = `<!DOCTYPE html>
           </form>
           <form action="./backend/reg.php" method="post" class="sign-up-form">
             <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" name="username"/>
-            </div>
-            <div class="input-field">
-              <i class="fas fa-phone"></i>
-              <input type="text" placeholder="Mobile Number" name="mobile_num" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-map-marker-alt"></i>
-              <input type="text" placeholder="Address" name="address" />
-            </div>
+            
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="First Name" name="fname" />
@@ -83,8 +69,7 @@ export const loginpage = `<!DOCTYPE html>
           <div class="content">
             <h3>New here ?</h3>
             <p>
-              Embark on a culinary journey from the comfort of your home 
-              - explore flavors delivered to your doorstep!
+            Join us today and take the first step towards a healthier life. Your wellness journey starts here!
             </p>
             <button class="btn transparent" id="sign-up-btn">
               Sign up
@@ -96,8 +81,7 @@ export const loginpage = `<!DOCTYPE html>
           <div class="content">
             <h3>One of us ?</h3>
             <p>
-              Rediscover the joy of dining at home with our seamless food delivery 
-              - where satisfaction keeps returning!
+            Empowering you with trusted healthcare, because your health is our priority.
             </p>
             <button class="btn transparent" id="sign-in-btn">
               Sign in
