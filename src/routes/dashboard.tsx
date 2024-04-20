@@ -1,9 +1,7 @@
 import { placeholderData } from "../data.ts";
 import Chart from "../components/Chart.tsx";
-import "./dashboard.css"
+import "./dashboard.css";
 
-
-      
 // import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -57,7 +55,9 @@ const Dashboard = () => {
       </section>
 
       <section
-        className={"h-fit bg-neutral-300 p-4 rounded-2xl w-4/5 flex flex-col section-card"}
+        className={
+          "h-fit bg-neutral-300 p-4 rounded-2xl w-4/5 flex flex-col section-card"
+        }
       >
         <h3>Your Personal Details</h3>
         <hr className={"my-3 bg-black h-px"} />
@@ -169,7 +169,9 @@ const Dashboard = () => {
       </section>
 
       <section
-        className={"h-fit bg-neutral-300 p-4 space-y-4 rounded-2xl w-4/5 section-card"}
+        className={
+          "h-fit bg-neutral-300 p-4 space-y-4 rounded-2xl w-4/5 section-card"
+        }
       >
         <h3>Your Progress</h3>
         <div id={"chart"}>
@@ -178,6 +180,7 @@ const Dashboard = () => {
           />
         </div>
       </section>
+      <section className={"h-36"} />
     </main>
   );
 };
