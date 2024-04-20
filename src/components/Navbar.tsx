@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <header
       className={
-        "backdrop-blur bg-neutral-800/50 w-full h-20 sticky top-0 flex justify-center items-center"
+        "backdrop-blur z-30 bg-neutral-800/50 w-full h-20 sticky top-0 flex justify-center items-center"
       }
     >
       <div className={"w-4/5 flex items-center justify-between"}>
