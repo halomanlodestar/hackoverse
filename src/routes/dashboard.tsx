@@ -1,5 +1,9 @@
 import { placeholderData } from "../data.ts";
 import Chart from "../components/Chart.tsx";
+import "./dashboard.css"
+
+
+      
 // import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -39,7 +43,7 @@ const Dashboard = () => {
     <main className={"h-full"}>
       <section
         className={
-          "h-fit bg-neutral-300 p-4 rounded-2xl w-4/5 flex items-center space-x-4"
+          "h-fit bg-neutral-300 p-4 rounded-2xl w-4/5 flex items-center space-x-4 section-card"
         }
       >
         <img
@@ -53,7 +57,7 @@ const Dashboard = () => {
       </section>
 
       <section
-        className={"h-fit bg-neutral-300 p-4 rounded-2xl w-4/5 flex flex-col"}
+        className={"h-fit bg-neutral-300 p-4 rounded-2xl w-4/5 flex flex-col section-card"}
       >
         <h3>Your Personal Details</h3>
         <hr className={"my-3 bg-black h-px"} />
@@ -69,7 +73,7 @@ const Dashboard = () => {
 
       <section
         className={
-          "h-fit bg-neutral-300 p-4 rounded-2xl w-4/5 flex flex-col space-y-4"
+          "h-fit bg-neutral-300 p-4 rounded-2xl w-4/5 flex flex-col space-y-4 section-card"
         }
       >
         <h3>Your Past Appointments</h3>
@@ -165,7 +169,7 @@ const Dashboard = () => {
       </section>
 
       <section
-        className={"h-fit bg-neutral-300 p-4 space-y-4 rounded-2xl w-4/5"}
+        className={"h-fit bg-neutral-300 p-4 space-y-4 rounded-2xl w-4/5 section-card"}
       >
         <h3>Your Progress</h3>
         <div id={"chart"}>
