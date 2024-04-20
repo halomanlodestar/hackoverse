@@ -13,7 +13,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #93B1A6;;
+  background-color: #9dc4d8;;
 }
 
 /* .logo{
@@ -30,7 +30,7 @@ ul{
 }
 ul li a{
   padding: 0 20px;
-  color: #183D3D;
+  color: #ab91e2;
   display: inline-block;
   text-decoration: none;
 }
@@ -216,7 +216,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #183D3D 0%, #265f5f 100%);
+  background-image: linear-gradient(-45deg, #94b9d7 0%, #87cfcf 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
