@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 interface CardProps {
   data: number[];
 }
@@ -22,11 +20,11 @@ const Chart = ({ data }: CardProps) => {
   //   ctx.stroke()
   // })
 
-  const [loadProgress, setLoadProgress] = useState(0);
-
-  useEffect(() => {
-    setTimeout(() => setLoadProgress(1), 600);
-  }, []);
+  // const [loadProgress, setLoadProgress] = useState(0);
+  //
+  // useEffect(() => {
+  //   setTimeout(() => setLoadProgress(1), 600);
+  // }, []);
 
   return (
     <div>
@@ -40,18 +38,16 @@ const Chart = ({ data }: CardProps) => {
             <div className={"h-full flex items-end"}>
               <div
                 className={"flex flex-col justify-end h-0 duration-700"}
-                style={{ height: `calc(${value}% * ${loadProgress})` }}
+                style={{ height: `calc(${value}%)` }}
               >
                 {/*<div className={"h-2 w-2 rounded-full bg-red-600"} />*/}
                 <div
                   key={index}
                   className={
-                    "relative bg-red-600 w-1 h-full rounded-t-xl flex justify-center space-x-2"
+                    "relative bg-purple-800  w-5 h-full rounded-t-xl flex justify-center space-x-2"
                   }
                 >
-                  <span className={"absolute -top-10"}>
-                    {value + 200 * loadProgress}
-                  </span>
+                  <span className={"absolute -top-10"}>{value}</span>
                 </div>
               </div>
             </div>

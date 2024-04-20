@@ -1,6 +1,10 @@
 import { placeholderData } from "../data.ts";
 import Chart from "../components/Chart.tsx";
-
+// import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useState } from "react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 const Dashboard = () => {
   // Name
   // Image
@@ -9,9 +13,27 @@ const Dashboard = () => {
   // Progress
   // medicine course
   //
+  gsap.registerPlugin(useGSAP);
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.to("#chart", {
+      scrollTrigger: {
+        trigger: "#chart",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+      },
+      onStart: () => {
+        setMultiplier(1);
+      },
+    });
+  });
+
+  const [multiplier, setMultiplier] = useState(0);
 
   const profileImage =
-    "https://thumbs.dreamstime.com/b/profile-picture-caucasian-male-employee-posing-office-happy-young-worker-look-camera-workplace-headshot-portrait-smiling-190186649.jpg";
+    "https://thumbs.dreamstime.com/b/profile-picture-caucasian-male-employee-posing-office-appy-young-worker-look-camera-workplace-headshot-portrait-smiling-190186649.jpg";
 
   return (
     <main className={"h-full"}>
@@ -146,8 +168,10 @@ const Dashboard = () => {
         className={"h-fit bg-neutral-300 p-4 space-y-4 rounded-2xl w-4/5"}
       >
         <h3>Your Progress</h3>
-        <div>
-          <Chart data={[10, 80, 30, 40, 33, 90, 58]} />
+        <div id={"chart"}>
+          <Chart
+            data={[10, 80, 30, 40, 33, 90, 58].map((item) => item * multiplier)}
+          />
         </div>
       </section>
     </main>
