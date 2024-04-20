@@ -7,13 +7,17 @@ const navItems = [
     name: "Dashboard",
     href: "/dashboard",
   },
+  {
+    name: "Login",
+    href: "/login"
+  }
 ];
 
 const Navbar = () => {
   return (
     <header
       className={
-        "backdrop-blur z-30 bg-neutral-800/50 w-full h-20 sticky top-0 flex justify-center items-center"
+        "backdrop-blur z-30 bg-white w-full h-20 sticky top-0 flex justify-center items-center"
       }
     >
       <div className={"w-4/5 flex items-center justify-between"}>
@@ -21,7 +25,7 @@ const Navbar = () => {
           <img
             alt={"logo"}
             src={"/logo-hackoverse.png"}
-            className={"w-14 h-14 bg-[#333] rounded-full"}
+            className={"w-14 h-14 rounded-full"}
           />
 
           {/*<Link to={"dashboard"}>*/}
