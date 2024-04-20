@@ -8,6 +8,14 @@ html body {
   width: 100%;
 }
 
+a:visited {
+  color: #e1e1e1;
+}
+
+a:visited:hover {
+  color: #ffffff;
+}
+
 main {
   display: flex;
   width: 100%;
