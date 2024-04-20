@@ -1,6 +1,6 @@
 import { placeholderData } from "../data.ts";
 import Chart from "../components/Chart.tsx";
-import "./dashboard.css"
+// import "./dashboard.css"
 
 
 const Dashboard = () => {
